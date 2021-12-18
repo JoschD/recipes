@@ -1,13 +1,12 @@
 # Site settings
-title: Chowdown
-email: your-email@domain.com
-description: The plain text recipe database for hackers
-baseurl: "https://chowdown.io"
+title: JoschD's Recipes 
+# email: your-email@domain.com
+description: A collection of my favourite food!
+# baseurl: "https://chowdown.io"
 language: "en"
 lang_direction: "ltr"
-color: "#007FFF"
-twitter_username: clarklab
-github_username:  clarklab
+color: "#ff7b00"
+github_username: joschd 
 
 # Build settings
 markdown: kramdown
@@ -28,18 +27,28 @@ translation:
     ingredients: "Ingredients"
     directions: "Directions"
     category: "Category"
+    categories: "Categories"
     nutritional_information: "Nutritional Information"
-    component_based: 'This is a <strong class="blue">component-based recipe</strong>.'
+    component_based: 'This is a <strong class="orange">component-based recipe</strong>.'
     search: "Search"
     blog: "Blog"
     subscribe: "Subscribe"
+    times: "Times"
+    cook_time: "Cooking Time"
+    prep_time: "Preparation Time"
+    total_time: "Total Time"
   de:
     components: "Komponenten"
     ingredients: "Zutaten"
     directions: "Zubereitung"
     category: "Kategorie"
+    categories: "Kategorien"
     nutritional_information: "Nährwertangaben"
-    component_based: 'Dieses Rezept besteht aus <strong class="blue">mehreren Komponenten</strong>.'
+    component_based: 'Dieses Rezept besteht aus <strong class="orange">mehreren Komponenten</strong>.'
     search: "Suche"
     blog: "Blog"
     subscribe: "Abonnieren"
+    times: "Zeiten"
+    cook_time: "Kochzeit"
+    prep_time: "Vorbereitungszeit"
+    total_time: "Gesamtzeit"

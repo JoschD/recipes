@@ -29,18 +29,29 @@ layout: default
   </div>
 
   <div class="mt3 clearfix">
-    <div class="sm-col sm-col-12 lg-col-12">
-      {% include nutritional-information.html %}
-    </div>
+    {% if page.totalTime or page.cookTime or page.prepTime %}
+      <div class="sm-col sm-col-6 lg-col-6">
+        <h4 class="orange mt0 mb2 xs-center">{{ site.translation[site.language].times }}</h4>
+        {% if page.prepTime %}
+          <p itemprop="prepTime">{{ site.translation[site.language].prep_time }}: {{page.prepTime}}</p>
+        {% endif %}
+        {% if page.cookTime %}
+          <p itemprop="cookTime">{{ site.translation[site.language].cook_time }}: {{page.cookTime}}</p>
+        {% endif %}
+        {% if page.totalTime %}
+          <p itemprop="totalTime">{{ site.translation[site.language].total_time }}: {{page.totalTime}}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
   </div>
 
   <!-- call up recipe and directions -->
   <div class="clearfix mt3">
-
     <div class="sm-col sm-col-6 lg-col-6">
       <!-- check if it's a component-based recipe -->
       {% if page.components %}
-      <h4 class="blue mt0 mb2 xs-center">{{ site.translation[site.language].components }}</h4>
+      <h4 class="orange mt0 mb2 xs-center">{{ site.translation[site.language].components }}</h4>
       <ul>
         <!-- list components that make up recipe -->
         {% for component in page.components %}
@@ -48,9 +59,10 @@ layout: default
         {% endfor %}
       </ul>
       {% endif %}
+      
 
       {% if page.ingredients %}
-      <h4 class="blue mt0 mb2 xs-center">{{ site.translation[site.language].ingredients }}</h4>
+      <h4 class="orange mt0 mb2 xs-center">{{ site.translation[site.language].ingredients }}</h4>
       <ul itemprop="ingredients">
         <!-- list ingredients that make up recipe -->
         {% for ingredient in page.ingredients %}
@@ -58,11 +70,10 @@ layout: default
         {% endfor %}
       </ul>
       {% endif %}
-
     </div>
 
     <div class="sm-col sm-col-6 lg-col-6">
-      <h4 class="blue mt0 mb2 xs-center">{{ site.translation[site.language].directions }}</h4>
+      <h4 class="orange mt0 mb2 xs-center">{{ site.translation[site.language].directions }}</h4>
       <ul itemprop="recipeInstructions">
         {% for direction in page.directions %}
         <li>{{ direction | markdownify }}</li>
@@ -85,7 +96,7 @@ layout: default
     <div class="sm-col sm-col-4 px2">
     {% for recipe in site.components %}
     {% if recipe.title == component %}
-      <h4 class="blue center">{{recipe.title}}</h4>
+      <h4 class="orange center">{{recipe.title}}</h4>
 
       {% for image in recipe.image %}
       <div class="image ratio bg-cover" style="background-image:url({{site.baseurl}}/images/{{ image }});">
@@ -100,14 +111,14 @@ layout: default
         {% endif %}
       {% endfor %}
 
-      <h4 class="blue regular xs-center">{{ site.translation[site.language].ingredients }}</h4>
+      <h4 class="orange regular xs-center">{{ site.translation[site.language].ingredients }}</h4>
         <ul class="ingredients" itemprop="ingredients">
         {% for item in recipe.ingredients %}
         <li itemprop="ingredient">{{ item | markdownify }}</li>
         {% endfor %}
       </ul>
 
-      <h4 class="blue regular xs-center">{{ site.translation[site.language].directions }}</h4>
+      <h4 class="orange regular xs-center">{{ site.translation[site.language].directions }}</h4>
         <ul itemprop="instructions">
         {% for item in recipe.directions %}
         <li>{{ item | markdownify }}</li>
@@ -123,9 +134,21 @@ layout: default
   {% endif %}
 <!-- end components -->
 
-  {% for category in page.categories %}
-    <p class="clearfix">{{ site.translation[site.language].category }}: <span itemprop="recipeCategory">{{ category }}</span></p>
-  {% endfor %}
+  <div class="clearfix mt3">
+    <div class="sm-col sm-col-12 lg-col-12">
+      {% include nutritional-information.html %}
+    </div>
+  </div>
+
+  {% if page.categories %}
+    <p class="clearfix">{{ site.translation[site.language].categories }}: 
+    {% for category in page.categories %}
+    <span itemprop="recipeCategory">{{ category }}
+      {% if forloop.last == false %},{% endif %}
+    </span>
+    {% endfor %}
+    </p>
+  {% endif %}
 
   </article>
 

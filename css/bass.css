@@ -855,7 +855,7 @@ body {
 }
 
 a {
-  color: #007FFF;
+  color: #ff7b00;
   text-decoration: none;
 }
 
@@ -876,7 +876,7 @@ hr {
 
 .button {
   color: white;
-  background-color: #007FFF;
+  background-color: #ff7b00;
   border-radius: 3px;
   transition-duration: .05s;
   transition-timing-function: ease-out;
@@ -912,8 +912,8 @@ hr {
 
 .field-light:focus {
   outline: none;
-  border-color: #007FFF;
-  box-shadow: 0 0 0 2px rgba(0, 127, 255, 0.5);
+  border-color: #ff7b00;
+  box-shadow: 0 0 0 2px rgba(255, 166, 0, 0.5);
 }
 
 .field-light:disabled {

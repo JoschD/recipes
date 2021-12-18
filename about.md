@@ -4,4 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Chowdown, a plain text recipe database for hackers
+My favourite recipes. 
+Presented for you in Chowdown!
