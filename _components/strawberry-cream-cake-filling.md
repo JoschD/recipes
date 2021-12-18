@@ -3,7 +3,7 @@
 layout: recipe
 
 title:  "Strawberry Cream Cake Filling"
-category: dough
+category: filling
 
 author: joschd
 

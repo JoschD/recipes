@@ -5,10 +5,10 @@ title:  "Nutty Gingerbread"
 image: nutty-gingerbread.jpg
 # imagecredit: 
 tags: cake, almonds, hazel, nuts, christmas
-creator: joschd
+author: joschd
 
 # totalTime: 45min
-cookingTime: 30min
+cookTime: 30min
 
 category: 
 - cake 

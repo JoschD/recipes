@@ -81,6 +81,17 @@ layout: default
       </ul>
     </div>
 
+  
+    {% if page.alternatives %}
+    <div class="sm-col sm-col-12 lg-col-12">
+      <h4 class="orange regular xs-center">{{ site.translation[site.language].alternatives }}</h4>
+      <ol style="list-style: disc;">  <!-- <ul> get replaced with tickboxes, so a bit of hacking ordered lists here. -->
+        {% for item in page.alternatives %}
+        <li>{{ item | markdownify }}</li>
+        {% endfor %}
+      </ol>
+  </div>
+  {% endif %}
   </div>
 <!-- end recipe and directions -->
 
@@ -139,6 +150,7 @@ layout: default
       {% include nutritional-information.html %}
     </div>
   </div>
+  
 
   {% if page.categories %}
     <p class="clearfix">{{ site.translation[site.language].categories }}: 

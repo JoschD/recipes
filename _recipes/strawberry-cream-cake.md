@@ -26,6 +26,10 @@ directions:
 - Add filling on top.
 - Put into the fridge for about 5h.
 - Add decorative cream, mint leaves and strawberries.
+
+alternatives:
+- Use Apricots instead of Strawberries.
+  
 ---
 
 Very easy Strawberry Cake with a very creamy yogurt topping and the best base you can imagine.
