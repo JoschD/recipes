@@ -6,7 +6,7 @@ category: cake
 
 author: joschd
 
-image: nussecken.png
+image: nussecken.jpg
 
 # prepTime: 20 minutes
 cookTime: 20-30min
