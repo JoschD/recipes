@@ -2,7 +2,7 @@
 
 layout: recipe
 
-title:  "Christmas Cake Mama"
+title:  "Mama's Christmas Cake"
 category: cake
 
 author: joschd
