@@ -1,7 +1,7 @@
 ---
 layout: recipe
 title: "Raspberry Mascarpone Quark"
-image: raspberry-mascarpone-quark.jpeg
+image: raspberry-mascarpone-quark.jpg
 # imagecredit: 
 tags: raspberry, fruit, desert
 
@@ -22,8 +22,7 @@ ingredients:
 - 2 Tbsp. lemon juice
 - 1 pack vanilla sugar
 - 100g cream
-- Some (non-fozen) raspberries for decoration
-- Zitronenmelisse for decoration
+- Zitronenmelisse, fresh raspberries, white chocolate flakes for decoration
 
 
 directions:
