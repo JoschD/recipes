@@ -21,6 +21,6 @@ ingredients:
  - 1 Tsp. Lemon Juice
 
 directions:
-- Mix incredients together.
+- Mix ingredients together.
 
 ---

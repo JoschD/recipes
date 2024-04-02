@@ -3,6 +3,7 @@ layout: recipe
 
 title:  "Strawberry Cream Cake"
 category: cake
+tags: cake, cream, fruit 
 
 author: joschd
 
