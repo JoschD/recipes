@@ -1,8 +1,6 @@
-
 ---
-
 layout: recipe
-title:  "BBC Best Ever Brownies"
+title: "BBC Best Ever Brownies"
 image: baking-placeholder.jpg
 # imagecredit: 
 tags: cake, brownies,hazel, nuts, christmas
