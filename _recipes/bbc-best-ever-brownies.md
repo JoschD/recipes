@@ -70,5 +70,5 @@ directions:
 
 ---
 
-Copied from: http://www.bbcgoodfood.com/recipes/1223/bestever-brownies
+Copied from [BBC Good Food](http://www.bbcgoodfood.com/recipes/1223/bestever-brownies) <br>
 These brownies are so addictive you’ll want to make a second batch before the first is finished, but if you want to make some to hide away for a special occasion, it’s useful to know that they’ll keep in an airtight container for a good two weeks and in the freezer for up to a month
